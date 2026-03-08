@@ -1,0 +1,118 @@
+.footer {
+  background: #110800;
+  padding: 60px 0 0;
+  border-top: 1px solid rgba(255,107,0,0.1);
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: auto repeat(4, 1fr);
+  gap: 3rem;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  align-items: start;
+}
+
+
+.footer__logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.footer__logo-pizza { color: #ff6b00; }
+.footer__logo-shop  { color: #ffffff; }
+
+
+.footer__col h4 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footer__col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__col ul li a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+
+.footer__col ul li a:hover {
+  color: var(--orange);
+}
+
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0;
+}
+
+.footer__phone {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.footer__phone:hover { color: var(--orange); }
+
+.footer__socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__social {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-gray);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer__social:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .footer__top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer__logo {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__container { padding: 0 20px; }
+  .footer__top { grid-template-columns: 1fr 1fr; }
+  .footer__logo { grid-column: span 2; }
+  .footer__bottom { flex-direction: column; gap: 16px; }
+}
