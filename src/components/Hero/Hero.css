@@ -62,7 +62,7 @@
 .hero__bolt {
   display: inline-block;
   font-size: 2.8rem;
-  animation: pulseBolt 1.5s ease-in-out infinite;
+  
 }
 
 @keyframes pulseBolt {
@@ -110,13 +110,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.6);
-  transition: filter 0.3s;
 }
 
-.hero__video-thumb:hover img {
-  filter: brightness(0.8);
-}
+
 
 .hero__play {
   position: absolute;
@@ -168,7 +164,6 @@
 .hero__float {
   position: absolute;
   font-size: 3rem;
-  animation: float 3s ease-in-out infinite;
   pointer-events: none;
 }
 
@@ -181,7 +176,6 @@
 .hero__float--slice {
   top: -90px;
   right: -90px;
-  animation-delay: 1s;
 }
 
 @keyframes float {

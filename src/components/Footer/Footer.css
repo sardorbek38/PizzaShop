@@ -96,7 +96,7 @@
   background: var(--orange);
   border-color: var(--orange);
   color: white;
-  transform: translateY(-2px);
+
 }
 
 @media (max-width: 900px) {

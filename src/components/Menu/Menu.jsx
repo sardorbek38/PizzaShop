@@ -129,7 +129,7 @@ function PizzaCard({ pizza }) {
         className={`pizza-card__order btn-orange ${added ? "pizza-card__order--added" : ""}`}
         onClick={handleOrder}
       >
-        {added ? "✓ Qo'shildi!" : "Order Now"}
+        {added ? " Qo'shildi!" : "Order Now"}
       </button>
     </div>
   );
